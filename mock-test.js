@@ -18,8 +18,8 @@ describe("Battle", () => {
     const mockTrainer = new Trainer();
     const mockTrainer2 = new Trainer();
 
-    // 2. We mock the method getMove, replacing its normal implementation
-    // with a custom function (which here simply returns 'paper').
+    // 2. We mock the method getPokemon, replacing its normal implementation
+    // with a custom function (which here simply returns a pokemon object).
       mockTrainer.getPokemon.mockImplementation(() => { return { name: "pokemon1", hitPoints: 20, attackDamage: 3 } })
       mockTrainer2.getPokemon.mockImplementation(() => {
         return { name: "pokemon2", hitPoints: 25, attackDamage: 1 };
