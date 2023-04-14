@@ -6,6 +6,4 @@ At the end of the workshop, after having mocked a fetch request, I attempted to 
 
 require("jest-fetch-mock").enableMocks();
 
-at the top of a test file, you cannot run normal requests anymore, these are disabled. There are several ways to deal with that, one of them being separating the mock tests from the ones that rely on the real implementation of a fetch request. I will post an updated and correct version of the code on my github in a bit, and link it in this channel :slightly_smiling_face: 
-
-In the meantime, have a great lunch break :sandwich:!  
+at the top of a test file, you cannot run normal requests anymore, these are disabled. There are several ways to deal with that, one of them being separating the mock tests from the ones that rely on the real implementation of a fetch request. 
