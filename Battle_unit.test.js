@@ -37,7 +37,6 @@ describe("Battle Class - unit test", () => {
         const battle = new Battle(mockTrainer, mockTrainer2);
         const result = battle.playBattleRound();
 
-        console.log(result);
         expect(result).toEqual({
           name: "pokemon1",
           hitPoints: 24,
@@ -46,20 +45,3 @@ describe("Battle Class - unit test", () => {
     })
 
 });
-
-
-
-//   it("wins the game", () => {
-//     // 1. We use the normal constructor - Jest will take care of creating a mock.
-//     const mockRandomGenerator = new RandomGenerator();
-
-//     // 2. We mock the method getMove, replacing its normal implementation
-//     // with a custom function (which here simply returns 'paper').
-//     mockRandomGenerator.getMove.mockImplementation(() => "paper");
-
-//     // 3. The rest is the same as when using the previous technique.
-//     const game = new RockPaperScissors(mockRandomGenerator);
-
-//     expect(game.getResult("scissors")).toBe("win");
-//   });
-// });

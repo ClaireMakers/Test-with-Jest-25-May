@@ -18,8 +18,6 @@ describe("Battle class - integration testing", () => {
          const battle = new Battle(ash, misty);
 
         let result = battle.playBattleRound();
-        console.log(result);
-        console.log(ivysaur);
         
         expect(result).toEqual({
           name: "Ivysaur",
