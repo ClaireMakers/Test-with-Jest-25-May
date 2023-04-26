@@ -4,6 +4,10 @@ class Pokemon {
     this.hitPoints = hitPoints;
     this.attackDamage = attackDamage;
   }
+
+  getPokemonName() {
+    return this.name;
+  }
 }
 
 module.exports = Pokemon;

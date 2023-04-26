@@ -1,4 +1,6 @@
-function fetchPokemon() {
+class FetchPokemon {
+
+fetchPokemon() {
     return fetch("https://pokeapi.co/api/v2/pokemon/ditto")
         .then((data) => {
             return data.json();
@@ -11,5 +13,5 @@ function fetchPokemon() {
             return pokemon;
         })
     }
-
-module.exports = fetchPokemon;
+}
+module.exports = FetchPokemon;

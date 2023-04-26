@@ -1,11 +1,11 @@
 class Trainer {
-  constructor(name) {
-    this.pokemon = {};
+  constructor(name, pokemon) {
+    this.pokemon = pokemon;
     this.name = name;
   }
 
-  catchPokemon(pokemon) {
-    this.pokemon = pokemon;
+  sayPokemonName() {
+    return `My pokemon is ${this.pokemon.getPokemonName()}`;
   }
 
   getPokemon() {
@@ -14,3 +14,5 @@ class Trainer {
 }
 
 module.exports = Trainer;
+
+

@@ -12,11 +12,6 @@ class Battle {
       pokemonTrainer1.hitPoints - pokemonTrainer2.attackDamage;
     pokemonTrainer2.hitPoints =
       pokemonTrainer2.hitPoints - pokemonTrainer1.attackDamage;
-    
-    let battleStatus = `After the battle round, ${pokemonTrainer1.name} has ${pokemonTrainer1.hitPoints} hitpoints, 
-    and ${pokemonTrainer2.name} has ${pokemonTrainer2.hitPoints}`; 
-    
-    console.log(battleStatus);
 
     if (pokemonTrainer1.hitPoints > pokemonTrainer2.hitPoints)
       return pokemonTrainer1;
