@@ -8,6 +8,14 @@ class Pokemon {
   getPokemonName() {
     return this.name;
   }
+
+  getPokemonHitPoints() {
+    return this.hitPoints;
+  }
+
+  getPokemonAttackDamage() {
+    return this.attackDamage; 
+  }
 }
 
 module.exports = Pokemon;
